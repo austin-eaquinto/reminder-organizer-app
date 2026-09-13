@@ -4,11 +4,12 @@ using System.Text;
 
 namespace ReminderApp.Models
 {
-    internal class Medication
+    public class Medication
     {
-        int ID = 0;
-        string Name = "Filler-Name";
-        string Dosage = "Filler-Dose";
-        string Notes = "Filler-Note";
+        public int ID { get; set; }
+        public string Name { get; set; }
+        public string Dosage { get; set; }
+        public string Notes { get; set; }
+        public string Time { get; set; }
     }
 }

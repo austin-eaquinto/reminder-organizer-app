@@ -14,9 +14,14 @@
             <CollectionView x:Name="MedicationList">
                 <CollectionView.ItemTemplate>
                     <DataTemplate>
-                        <Label Text="{Binding .}"
-                               FontSize="18"
-                               Padding="0,8" />
+                        <HorizontalStackLayout Spacing="10" Padding="0,8">
+                            <Label Text="{Binding Name}"
+                                   FontSize="18"
+                                   FontAttributes="Bold" />
+                            <Label Text="{Binding Time}"
+                                   FontSize="18"
+                                   TextColor="Gray" />
+                        </HorizontalStackLayout>
                     </DataTemplate>
                 </CollectionView.ItemTemplate>
             </CollectionView>
